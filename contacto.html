@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - PixelCore</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="icons/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="container my-5">
+  <h2 class="mb-4">Contáctanos</h2>
+ 
+  <div class="row g-4">
+ 
+    <!-- Formulario -->
+    <div class="col-lg-7">
+      <div class="card shadow-sm">
+        <div class="card-body p-4">
+          <form class="row g-3">
+            <div class="col-md-6">
+              <label class="form-label">Nombre completo</label>
+              <input type="text" class="form-control" required>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" required>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Teléfono</label>
+              <input type="tel" class="form-control">
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Tipo de solicitud</label>
+              <select class="form-select" required>
+                <option value="">Elegir...</option>
+                <option>Consulta</option>
+                <option>Solicitud</option>
+                <option>Queja</option>
+                <option>Sugerencia</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <label class="form-label">Asunto</label>
+              <input type="text" class="form-control" required>
+            </div>
+            <div class="col-12">
+              <label class="form-label">Mensaje</label>
+              <textarea class="form-control" rows="4" required></textarea>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary"><i class="bi bi-send"></i> Enviar mensaje</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- Datos de la empresa -->
+    <div class="col-lg-5">
+      <div class="card shadow-sm h-100">
+        <div class="card-body p-4">
+          <h5 class="mb-3">Otros canales</h5>
+          <ul class="list-unstyled">
+            <li class="mb-3"><i class="bi bi-geo-alt text-primary"></i> Calle 123 #45-67, Tunja</li>
+            <li class="mb-3"><i class="bi bi-telephone text-primary"></i> (601) 000 0000</li>
+            <li class="mb-3"><i class="bi bi-envelope text-primary"></i> contacto@pixelcore.com</li>
+            <li class="mb-3"><i class="bi bi-clock text-primary"></i> Lun a Vie: 8:00 a.m. - 6:00 p.m.</li>
+          </ul>
+          <a href="#" class="btn btn-outline-primary btn-sm"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="btn btn-outline-primary btn-sm"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="btn btn-outline-primary btn-sm"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+ 
+  </div>
+ 
+  <!-- Seguimiento de solicitudes -->
+  <h4 class="mt-5 mb-3">Mis solicitudes</h4>
+  <table class="table">
+    <thead class="table-light">
+      <tr><th>N°</th><th>Asunto</th><th>Tipo</th><th>Fecha</th><th>Estado</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>#001</td><td>Garantía de portátil</td><td>Queja</td><td>08/08/2026</td>
+        <td><span class="badge bg-warning text-dark">En proceso</span></td>
+      </tr>
+      <tr>
+        <td>#002</td><td>Consulta de stock</td><td>Consulta</td><td>05/08/2026</td>
+        <td><span class="badge bg-success">Respondida</span></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+</body>
+</html>

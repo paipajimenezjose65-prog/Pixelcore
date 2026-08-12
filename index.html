@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PixelCore</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="icons/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <!-- ===== BARRA UTILIDADES ===== -->
+  <div class="bg-light border-bottom py-1">
+    <div class="container d-flex flex-wrap justify-content-end gap-3 small">
+      <span>Televentas: (601) 000 0000</span>
+      <span>Atención al cliente: (601) 000 0000</span>
+      <a href="#" class="text-decoration-none text-dark">Rastrea tu pedido</a>
+      <a href="catalogo.html" class="text-decoration-none text-dark">Catálogo</a>
+      <a href="#" class="text-decoration-none text-dark">PQR</a>
+    </div>
+  </div>
+
+  <!-- ===== HEADER: logo + buscador + cuenta/carrito (sticky) ===== -->
+  <div class="bg-white py-3 border-bottom sticky-top">
+    <div class="container d-flex align-items-center gap-3">
+      <a href="index.html" class="navbar-brand fw-bold fs-3 m-0">
+        <i class="bi bi-laptop text-ts"></i> PixelCore
+      </a>
+      <form class="d-flex flex-grow-1" role="search">
+        <div class="input-group">
+          <span class="input-group-text bg-white"><i class="bi bi-search text-ts"></i></span>
+          <input class="form-control" type="search" placeholder="¿Qué buscas hoy?">
+          <button class="btn btn-ts" type="submit">Buscar</button>
+        </div>
+      </form>
+      <a href="login.html" class="text-decoration-none text-center">
+        <i class="bi bi-person fs-4 d-block"></i>
+        <small>Mi cuenta</small>
+      </a>
+      <a href="carrito.html" class="text-decoration-none text-center position-relative">
+        <i class="bi bi-cart fs-4 d-block"></i>
+        <small>Mi carrito</small>
+        <span class="position-absolute top-0 start-100 translate-middle badge bg-ts">3</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- ===== NAV: mega-menú de categorías ===== -->
+  <nav class="navbar navbar-expand-lg bg-white border-bottom shadow-sm">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav align-items-lg-stretch">
+          <li class="nav-item dropdown position-static">
+            <a class="nav-link dropdown-toggle fw-semibold" href="#" role="button" data-bs-toggle="dropdown">
+              <i class="bi bi-grid me-1"></i>Categorías
+            </a>
+            <div class="dropdown-menu w-100 border-0 shadow rounded-0 py-4">
+              <div class="container">
+                <div class="row g-4">
+                  <div class="col-6 col-md-3">
+                    <div class="eyebrow mb-2">Cómputo</div>
+                    <a class="mega-link d-block mb-2" href="catalogo.html#portatiles">Portátiles</a>
+                    <a class="mega-link d-block mb-2" href="catalogo.html#escritorio">Computadores de escritorio</a>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="eyebrow mb-2">Componentes</div>
+                    <a class="mega-link d-block mb-2" href="catalogo.html#graficas">Tarjetas gráficas</a>
+                    <a class="mega-link d-block mb-2" href="catalogo.html#procesadores">Procesadores</a>
+                    <a class="mega-link d-block mb-2" href="catalogo.html#ram">Memorias RAM</a>
+                    <a class="mega-link d-block mb-2" href="catalogo.html#ssd">Discos SSD</a>
+                  </div>
+                    <div class="col-6 col-md">
+                  <div class="eyebrow mb-2">Nosotros</div>
+                    <p class="small text-muted mb-2">Descubre nuestra historia y valores.</p>
+                    <a href="nosotros.html" class="btn btn-ts btn-sm">Ver más</a>
+                 </div>
+                  <div class="col-6 col-md-3">
+                    <div class="eyebrow mb-2">Periféricos</div>
+                    <a class="mega-link d-block mb-2" href="catalogo.html#monitores">Monitores</a>
+                    <a class="mega-link d-block mb-2" href="catalogo.html#accesorios">Accesorios</a>
+                  </div>
+                  <div class="col-6 col-md-3 border-start">
+                    <div class="eyebrow mb-2">Destacado</div>
+                    <p class="small text-muted mb-2">Arma tu PC gamer con hasta 25% OFF esta semana.</p>
+                    <a href="catalogo.html" class="btn btn-ts btn-sm">Ver ofertas</a>                 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link fw-semibold" href="#ofertas">Tecnofertas</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold" href="#envio">Rastrea tu envío</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold" href="#comocomprar">¿Cómo comprar?</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold" href="contacto.html">Contáctanos</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO PRINCIPAL ===== -->
+  <section class="hero-section position-relative overflow-hidden">
+    <div class="container py-5">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6 text-black py-4">
+          <div class="eyebrow mb-2">Lanzamiento</div>
+          <h1 class="fw-bold display-5 mb-3">Potencia real para lo que construyes</h1>
+          <p class="text-black-50 mb-4">Portátiles y PCs de escritorio con hasta 25% de descuento, envío gratis y garantía extendida en equipos seleccionados.</p>
+          <div class="d-flex gap-2">
+            <a href="catalogo.html#portatiles" class="btn btn-ts btn-lg">Comprar ahora</a>
+            <a href="catalogo.html" class="btn btn-outline-light btn-lg">Ver catálogo</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="hero-image-placeholder d-flex align-items-center justify-content-center bg-white bg-opacity-10 rounded-4 text-black-50 fw-semibold">
+            <img src="img/hero_pc.png" class="img-fluid" alt="Imagen de PC y monitor">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROMOS SECUNDARIAS ===== -->
+  <section class="container my-5">
+    <div class="row g-3">
+      <div class="col-md-4">
+        <div class="promo-card promo-card-blue rounded-4 p-4 h-100 text-black">
+          <div class="eyebrow mb-2 text-black-50">Monitores</div>
+          <h5 class="fw-bold mb-3">Hasta 20% OFF en pantallas 24" a 34"</h5>
+          <a href="catalogo.html#monitores" class="fw-semibold text-black text-decoration-none">Explorar <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="promo-card promo-card-dark rounded-4 p-4 h-100 text-black">
+          <div class="eyebrow mb-2 text-black-50">Gaming</div>
+          <h5 class="fw-bold mb-3">GPUs y componentes para armar tu setup</h5>
+          <a href="catalogo.html#graficas" class="fw-semibold text-black text-decoration-none">Explorar <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="rounded-4 p-4 h-100 text-black bg-ts">
+          <div class="eyebrow mb-2 text-black-50">Accesorios</div>
+          <h5 class="fw-bold mb-3">Teclados, mouse y diademas desde $115.000</h5>
+          <a href="catalogo.html#accesorios" class="fw-semibold text-black text-decoration-none">Explorar <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BENEFICIOS ===== -->
+  <section class="border-top border-bottom bg-light py-4">
+    <div class="container">
+      <div class="row text-center g-4">
+        <div class="col-6 col-md-3">
+          <i class="bi bi-truck fs-3 text-ts d-block mb-1"></i>
+          <div class="fw-semibold small">Envío gratis</div>
+          <div class="text-muted small">En compras seleccionadas</div>
+        </div>
+        <div class="col-6 col-md-3">
+          <i class="bi bi-shield-check fs-3 text-ts d-block mb-1"></i>
+          <div class="fw-semibold small">Compra segura</div>
+          <div class="text-muted small">Pagos protegidos</div>
+        </div>
+        <div class="col-6 col-md-3">
+          <i class="bi bi-arrow-repeat fs-3 text-ts d-block mb-1"></i>
+          <div class="fw-semibold small">Devoluciones</div>
+          <div class="text-muted small">Fáciles y rápidas</div>
+        </div>
+        <div class="col-6 col-md-3">
+          <i class="bi bi-headset fs-3 text-ts d-block mb-1"></i>
+          <div class="fw-semibold small">Soporte</div>
+          <div class="text-muted small">Atención al cliente</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COMPRAR POR CATEGORÍA ===== -->
+  <section class="container my-5">
+    <div class="d-flex justify-content-between align-items-end mb-4">
+      <div>
+        <div class="eyebrow">Explora</div>
+        <h4 class="section-title m-0">Comprar por categoría</h4>
+      </div>
+      <a href="catalogo.html" class="btn btn-outline-ts btn-sm">Ver todas</a>
+    </div>
+    <div class="row g-3">
+      <div class="col-6 col-md-3">
+        <a href="catalogo.html#portatiles" class="text-decoration-none">
+          <div class="card card-product text-center py-4 h-100 text-dark">
+            <i class="bi bi-laptop fs-2 text-ts mb-2"></i>
+            <div class="fw-semibold small">Portátiles</div>
+          </div>
+        </a>
+      </div>
+      <div class="col-6 col-md-3">
+        <a href="catalogo.html#escritorio" class="text-decoration-none">
+          <div class="card card-product text-center py-4 h-100 text-dark">
+            <i class="bi bi-pc-display-horizontal fs-2 text-ts mb-2"></i>
+            <div class="fw-semibold small">Escritorio</div>
+          </div>
+        </a>
+      </div>
+      <div class="col-6 col-md-3">
+        <a href="catalogo.html#monitores" class="text-decoration-none">
+          <div class="card card-product text-center py-4 h-100 text-dark">
+            <i class="bi bi-display fs-2 text-ts mb-2"></i>
+            <div class="fw-semibold small">Monitores</div>
+          </div>
+        </a>
+      </div>
+      <div class="col-6 col-md-3">
+        <a href="catalogo.html#graficas" class="text-decoration-none">
+          <div class="card card-product text-center py-4 h-100 text-dark">
+            <i class="bi bi-gpu-card fs-2 text-ts mb-2"></i>
+            <div class="fw-semibold small">Tarjetas gráficas</div>
+          </div>
+        </a>
+      </div>
+      <div class="col-6 col-md-3">
+        <a href="catalogo.html#procesadores" class="text-decoration-none">
+          <div class="card card-product text-center py-4 h-100 text-dark">
+            <i class="bi bi-cpu fs-2 text-ts mb-2"></i>
+            <div class="fw-semibold small">Procesadores</div>
+          </div>
+        </a>
+      </div>
+      <div class="col-6 col-md-3">
+        <a href="catalogo.html#ram" class="text-decoration-none">
+          <div class="card card-product text-center py-4 h-100 text-dark">
+            <i class="bi bi-memory fs-2 text-ts mb-2"></i>
+            <div class="fw-semibold small">Memorias RAM</div>
+          </div>
+        </a>
+      </div>
+      <div class="col-6 col-md-3">
+        <a href="catalogo.html#ssd" class="text-decoration-none">
+          <div class="card card-product text-center py-4 h-100 text-dark">
+            <i class="bi bi-device-ssd fs-2 text-ts mb-2"></i>
+            <div class="fw-semibold small">Discos SSD</div>
+          </div>
+        </a>
+      </div>
+      <div class="col-6 col-md-3">
+        <a href="catalogo.html#accesorios" class="text-decoration-none">
+          <div class="card card-product text-center py-4 h-100 text-dark">
+            <i class="bi bi-mouse2 fs-2 text-ts mb-2"></i>
+            <div class="fw-semibold small">Accesorios</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== OFERTAS DESTACADAS (con countdown) ===== -->
+
+<section class="container my-5" id="ofertas">
+  <div class="d-flex flex-wrap justify-content-between align-items-end mb-4 gap-2">
+    <div>
+      <div class="eyebrow">Por tiempo limitado</div>
+      <h4 class="section-title m-0">Ofertas destacadas</h4>
+    </div>
+    <div class="countdown d-flex gap-2 align-items-center small text-muted">
+      Termina en
+      <span>02</span>:<span>14</span>:<span>36</span>:<span>09</span>
+    </div>
+  </div>
+  <div class="row g-4">
+    <div class="col-6 col-md-3">
+      <div class="card card-product h-100 border-0 position-relative">
+        <span class="position-absolute top-0 end-0 m-2 badge bg-ts">-25%</span>
+        <img src="img/portatiles/Portátil_HP.jpg" width="250" height="220" style="object-fit: contain;" class="card-img-top p-4" alt="PC HP Pavilion">
+        <div class="card-body pt-0">
+          <h6 class="card-title mb-1">Portátil HP 255 G10 16GB</h6>
+          <p class="text-muted small mb-2">HP</p>
+          <span class="badge bg-success w-100 mb-2 py-2">En stock</span>
+          <p class="text-secondary text-decoration-line-through mb-0 small">$2.000.000</p>
+          <p class="fs-5 fw-bold mb-2">$1.499.000</p>
+          <button class="btn btn-ts w-100"><i class="bi bi-cart-plus"></i> Agregar</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-3">
+      <div class="card card-product h-100 border-0 position-relative">
+        <img src="img/monitores/Monitor_LG_24.jpg" width="250" height="220" style="object-fit: contain;" class="card-img-top p-4" alt="Monitor LG 24 pulgadas">
+        <div class="card-body pt-0">
+          <h6 class="card-title mb-1">Monitor LG 24 pulgadas</h6>
+          <p class="text-muted small mb-2">LG</p>
+          <span class="badge bg-success w-100 mb-2 py-2">En stock</span>
+          <p class="fs-5 fw-bold mb-2 mt-4">$700.000</p>
+          <button class="btn btn-ts w-100"><i class="bi bi-cart-plus"></i> Agregar</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-3">
+      <div class="card card-product h-100 border-0 position-relative">
+        <span class="position-absolute top-0 end-0 m-2 badge bg-ts">-15%</span>
+        <img src="img/tarjetas_graficas/Tarjeta_gráfica_RTX.jpg" width="250" height="220" style="object-fit: contain;" class="card-img-top p-4" alt="Tarjeta gráfica RTX">
+        <div class="card-body pt-0">
+          <h6 class="card-title mb-1">Tarjeta gráfica RTX</h6>
+          <p class="text-muted small mb-2">Nvidia</p>
+          <span class="badge bg-success w-100 mb-2 py-2">En stock</span>
+          <p class="text-secondary text-decoration-line-through mb-0 small">$3.500.000</p>
+          <p class="fs-5 fw-bold mb-2">$2.999.000</p>
+          <button class="btn btn-ts w-100"><i class="bi bi-cart-plus"></i> Agregar</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-3">
+      <div class="card card-product h-100 border-0">
+        <img src="img/procesadores/Procesador_Ryzen_5.jpg" width="250" height="220" style="object-fit: contain;" class="card-img-top p-4" alt="Procesador Ryzen 5">
+        <div class="card-body pt-0">
+          <h6 class="card-title mb-1">Procesador Ryzen 5</h6>
+          <p class="text-muted small mb-2">AMD</p>
+          <span class="badge bg-secondary w-100 mb-2 py-2">Agotado</span>
+          <p class="fs-5 fw-bold mb-2 mt-4">$850.000</p>
+          <button class="btn btn-ts w-100 disabled"><i class="bi bi-cart-plus"></i> Agregar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- ===== LOS MÁS VENDIDOS ===== -->
+  <section class="bg-light py-5">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-end mb-4">
+        <div>
+          <div class="eyebrow">Tendencia</div>
+          <h4 class="section-title m-0">Los más vendidos</h4>
+        </div>
+        <a href="catalogo.html" class="btn btn-outline-ts btn-sm">Ver todo</a>
+      </div>
+      <div class="row g-4">
+        <div class="col-6 col-md-3">
+          <div class="card card-product h-100 border-0">
+            <div class="product-image-placeholder-sm d-flex align-items-center justify-content-center bg-white text-muted small fw-semibold m-3">SSD</div>
+            <div class="card-body pt-0">
+              <img src="img/ssd_samsung_1tb.jpg" class="card-img-top p-4" alt="SSD Samsung 1TB NVMe">
+              <h6 class="card-title mb-1">SSD Samsung 1TB NVMe</h6>
+              <div class="text-warning small mb-2">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+              </div>
+              <p class="fs-6 fw-bold mb-0">$452.000</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="card card-product h-100 border-0">
+            <div class="product-image-placeholder-sm d-flex align-items-center justify-content-center bg-white text-muted small fw-semibold m-3">RAM</div>
+            <div class="card-body pt-0">
+              <img src="img/rams/RAM_corsair.jpg" class="card-img-top p-4" alt="RAM Corsair 16GB DDR4">
+              <h6 class="card-title mb-1">RAM Corsair 16GB DDR4</h6>
+              <div class="text-warning small mb-2">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+              </div>
+              <p class="fs-6 fw-bold mb-0">$262.000</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="card card-product h-100 border-0">
+            <div class="product-image-placeholder-sm d-flex align-items-center justify-content-center bg-white text-muted small fw-semibold m-3">TECLADO</div>
+            <div class="card-body pt-0">
+              <img src="img/teclados/teclado_logitech.jpg" class="card-img-top p-4" alt="Teclado Logitech G213">
+              <h6 class="card-title mb-1">Teclado Logitech G213</h6>
+              <div class="text-warning small mb-2">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p class="fs-6 fw-bold mb-0">$175.000</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="card card-product h-100 border-0">
+            <div class="product-image-placeholder-sm d-flex align-items-center justify-content-center bg-white text-muted small fw-semibold m-3">MOUSE</div>
+            <div class="card-body pt-0">
+              <img src="img/mouse/mouse_razer.jpg" class="card-img-top p-4" alt="Mouse Razer DeathAdder V2">
+              <h6 class="card-title mb-1">Mouse Razer DeathAdder V2</h6>
+              <div class="text-warning small mb-2">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p class="fs-6 fw-bold mb-0">$155.000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MARCAS ===== -->
+  <section class="container py-5 text-center">
+    <div class="eyebrow">Aliados</div>
+    <h5 class="section-title mb-4">Marcas que confían en nosotros</h5>
+    <div class="d-flex flex-wrap justify-content-center gap-5 text-muted fw-semibold fs-5">
+      <span>HP</span>
+      <span>Asus</span>
+      <span>LG</span>
+      <span>AMD</span>
+      <span>Intel</span>
+      <span>Nvidia</span>
+    </div>
+  </section>
+
+  <!-- ===== NEWSLETTER ===== -->
+  <section class="newsletter-section py-5 text-center text-white">
+    <div class="container">
+      <i class="bi bi-envelope fs-1 mb-3 d-block"></i>
+      <h4 class="fw-bold">Suscríbete a nuestro boletín</h4>
+      <p class="mb-4 text-white-50">Recibe promociones y novedades de TechStore.</p>
+      <form class="d-flex justify-content-center gap-2 flex-wrap">
+        <input type="email" class="form-control" placeholder="Tu correo electrónico">
+        <button type="submit" class="btn btn-ts fw-semibold">Suscribirme</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer text-white bg-dark">
+    <div class="container py-4 border-bottom border-light border-opacity-25">
+      <div class="row text-center g-3">
+        <div class="col-6 col-md-3">
+          <i class="bi bi-truck d-block mb-1"></i>
+          <small>Envíos a todo el país</small>
+        </div>
+        <div class="col-6 col-md-3">
+          <i class="bi bi-shield-check d-block mb-1"></i>
+          <small>Compra segura</small>
+        </div>
+        <div class="col-6 col-md-3">
+          <i class="bi bi-arrow-repeat d-block mb-1"></i>
+          <small>Devoluciones fáciles</small>
+        </div>
+        <div class="col-6 col-md-3">
+          <i class="bi bi-headset d-block mb-1"></i>
+          <small>Soporte al cliente</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-5">
+      <div class="row g-4">
+        <div class="col-md-3">
+          <div class="fw-bold fs-5 mb-2"><i class="bi bi-book"></i> TechStore</div>
+          <p class="small text-white-50">Tu tienda de equipos de cómputo. Tecnología de calidad con la mejor atención.</p>
+          <div class="d-flex gap-2">
+            <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-white"><i class="bi bi-whatsapp"></i></a>
+            <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="fw-semibold mb-2">Categorías</div>
+          <ul class="list-unstyled small">
+            <li class="mb-1"><a href="catalogo.html#portatiles" class="link-light link-underline-opacity-50">Portátiles</a></li>
+            <li class="mb-1"><a href="catalogo.html#escritorio" class="link-light link-underline-opacity-50">Escritorio</a></li>
+            <li class="mb-1"><a href="catalogo.html#monitores" class="link-light link-underline-opacity-50">Monitores</a></li>
+            <li class="mb-1"><a href="catalogo.html#graficas" class="link-light link-underline-opacity-50">Tarjetas gráficas</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <div class="fw-semibold mb-2">Ayuda</div>
+          <ul class="list-unstyled small">
+            <li class="mb-1"><a href="contacto.html" class="link-light link-underline-opacity-50">Contáctanos</a></li>
+            <li class="mb-1"><a href="#" class="link-light link-underline-opacity-50">¿Cómo comprar?</a></li>
+            <li class="mb-1"><a href="#" class="link-light link-underline-opacity-50">Preguntas frecuentes</a></li>
+            <li class="mb-1"><a href="carrito.html" class="link-light link-underline-opacity-50">Mi carrito</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <div class="fw-semibold mb-2">Contacto</div>
+          <ul class="list-unstyled small">
+            <li class="mb-1"><i class="bi bi-geo-alt"></i> Calle 123 #45-67, Tunja</li>
+            <li class="mb-1"><i class="bi bi-telephone"></i> (601) 000 0000</li>
+            <li class="mb-1"><i class="bi bi-envelope"></i> contacto@pixelcore.com</li>
+          </ul>
+          <div class="d-flex gap-2 fs-5 mt-2">
+            <i class="bi bi-credit-card"></i>
+            <i class="bi bi-paypal"></i>
+            <i class="bi bi-wallet2"></i>
+            <i class="bi bi-bank"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center py-3 border-top border-light border-opacity-25 small text-white-50">
+      © 2026 TechStore. Nombre Autor.
+    </div>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

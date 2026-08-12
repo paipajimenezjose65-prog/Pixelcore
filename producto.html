@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="icons/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <!-- ===== HEADER: logo + buscador + cuenta/carrito (sticky) ===== -->
+  <div class="bg-white py-3 border-bottom sticky-top">
+    <div class="container d-flex align-items-center gap-3">
+      <a href="index.html" class="navbar-brand fw-bold fs-3 m-0">
+        <i class="bi bi-laptop text-ts"></i> PixelCore
+      </a>
+      <form class="d-flex flex-grow-1" role="search">
+        <div class="input-group">
+          <span class="input-group-text bg-white"><i class="bi bi-search text-ts"></i></span>
+          <input class="form-control" type="search" placeholder="¿Qué buscas hoy?">
+          <button class="btn btn-ts" type="submit">Buscar</button>
+        </div>
+      </form>
+      <a href="login.html" class="text-decoration-none text-center">
+        <i class="bi bi-person fs-4 d-block"></i>
+        <small>Mi cuenta</small>
+      </a>
+      <a href="carrito.html" class="text-decoration-none text-center position-relative">
+        <i class="bi bi-cart fs-4 d-block"></i>
+        <small>Mi carrito</small>
+        <span class="position-absolute top-0 start-100 translate-middle badge bg-ts">3</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- ===== NAV: mega-menú de categorías ===== -->
+  <nav class="navbar navbar-expand-lg bg-white border-bottom shadow-sm">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav align-items-lg-stretch">
+          <li class="nav-item dropdown position-static">
+            <a class="nav-link dropdown-toggle fw-semibold" href="#" role="button" data-bs-toggle="dropdown">
+              <i class="bi bi-grid me-1"></i>Categorías
+            </a>
+            <div class="dropdown-menu w-100 border-0 shadow rounded-0 py-4">
+              <div class="container">
+                <div class="row g-4">
+                  <div class="col-6 col-md-3">
+                    <div class="eyebrow mb-2">Cómputo</div>
+                    <a class="mega-link d-block mb-2" href="catalogo.html#portatiles">Portátiles</a>
+                    <a class="mega-link d-block mb-2" href="catalogo.html#escritorio">Computadores de escritorio</a>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="eyebrow mb-2">Componentes</div>
+                    <a class="mega-link d-block mb-2" href="catalogo.html#graficas">Tarjetas gráficas</a>
+                    <a class="mega-link d-block mb-2" href="catalogo.html#procesadores">Procesadores</a>
+                    <a class="mega-link d-block mb-2" href="catalogo.html#ram">Memorias RAM</a>
+                    <a class="mega-link d-block mb-2" href="catalogo.html#ssd">Discos SSD</a>
+                  </div>
+                    <div class="col-6 col-md">
+                  <div class="eyebrow mb-2">Nosotros</div>
+                    <p class="small text-muted mb-2">Descubre nuestra historia y valores.</p>
+                    <a href="nosotros.html" class="btn btn-ts btn-sm">Ver más</a>
+                 </div>
+                  <div class="col-6 col-md-3">
+                    <div class="eyebrow mb-2">Periféricos</div>
+                    <a class="mega-link d-block mb-2" href="catalogo.html#monitores">Monitores</a>
+                    <a class="mega-link d-block mb-2" href="catalogo.html#accesorios">Accesorios</a>
+                  </div>
+                  <div class="col-6 col-md-3 border-start">
+                    <div class="eyebrow mb-2">Destacado</div>
+                    <p class="small text-muted mb-2">Arma tu PC gamer con hasta 25% OFF esta semana.</p>
+                    <a href="catalogo.html" class="btn btn-ts btn-sm">Ver ofertas</a>                 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link fw-semibold" href="#ofertas">Tecnofertas</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold" href="#envio">Rastrea tu envío</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold" href="#comocomprar">¿Cómo comprar?</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold" href="contacto.html">Contáctanos</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!-- ===================================================== -->
+  <!-- SECCIÓN: PRODUCTOS -->
+  <!-- ===================================================== -->
+  <section class="products-section py-5">
+    <div class="container">
+
+      <div class="d-flex justify-content-between align-items-end mb-4">
+        <div>
+          <div class="eyebrow">Catálogo</div>
+          <h4 class="section-title m-0">Productos</h4>
+        </div>
+        <a href="catalogo.html" class="btn btn-outline-ts btn-sm">Ver todo</a>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- ===== CARD 1: con descuento + en stock ===== -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100 border-0">
+
+            <!-- Badge de descuento -->
+            <span class="badge badge-discount position-absolute m-2">-25%</span>
+
+            <!-- Card Image -->
+            <div class="card-img-wrapper product-image-placeholder d-flex align-items-center justify-content-center bg-light text-muted small fw-semibold m-3">
+              LAPTOP
+            </div>
+
+            <div class="card-body pt-0 d-flex flex-column">
+              <h6 class="card-title mb-1">Portátil HP 255 G10 16GB</h6>
+              <img src="img/portatiles/portátil_hp.jpg" width="250" height="220" style="object-fit: contain;" class="card-img-top p-4" alt="Portátil HP 16GB">
+              <p class="text-muted small mb-2">HP</p>
+
+              <!-- Rating -->
+              <div class="rating text-warning small mb-2">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+                <span class="text-muted ms-1">(128)</span>
+              </div>
+
+              <!-- Badge de stock -->
+              <span class="badge badge-stock w-100 mb-2 py-2">En stock</span>
+
+              <!-- Precios -->
+              <p class="price-old text-secondary text-decoration-line-through mb-0 small">$2.000.000</p>
+              <p class="price-current fs-5 fw-bold mb-3">$1.499.000</p>
+
+              <!-- Button -->
+              <button class="btn btn-ts w-100 mt-auto" type="button">
+                <a href="carrito.html" class="bi bi-cart-plus">Agregar al carrito</a>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== CARD 2: sin descuento, últimas unidades ===== -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100 border-0">
+
+            <!-- Card Image -->
+            <div class="card-img-wrapper product-image-placeholder d-flex align-items-center justify-content-center bg-light text-muted small fw-semibold m-3">
+              MONITOR
+            </div>
+
+            <div class="card-body pt-0 d-flex flex-column">
+              <h6 class="card-title mb-1">Monitor LG 24"</h6>
+              <img src="img/monitores/Monitor_LG_24.jpg" width="250" height="220" style="object-fit: contain;" class="card-img-top p-4" alt="Monitor LG UltraWide 29">
+              <p class="text-muted small mb-2">LG</p>
+
+              <!-- Rating -->
+              <div class="rating text-warning small mb-2">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+                <span class="text-muted ms-1">(64)</span>
+              </div>
+
+              <!-- Badge de stock -->
+              <span class="badge badge-low-stock w-100 mb-2 py-2">Últimas unidades</span>
+
+              <!-- Precios (sin descuento) -->
+              <p class="price-current fs-5 fw-bold mb-3 mt-4">$980.000</p>
+
+              <!-- Button -->
+              <button class="btn btn-ts w-100 mt-auto" type="button">
+               <a href="carrito.html" class="bi bi-cart-plus">Agregar al carrito</a>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== CARD 3: con descuento + agotado ===== -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100 border-0">
+
+            <!-- Badge de descuento -->
+            <span class="badge badge-discount position-absolute m-2">-15%</span>
+
+            <!-- Card Image -->
+            <div class="card-img-wrapper product-image-placeholder d-flex align-items-center justify-content-center bg-light text-muted small fw-semibold m-3">
+              GPU
+            </div>
+
+            <div class="card-body pt-0 d-flex flex-column">
+              <h6 class="card-title mb-1">Tarjeta Gráfica RTX 4060</h6>
+              <img src="img/tarjetas_graficas/gpu_rtx4060.png" width="250" height="220" style="object-fit: contain;" class="card-img-top p-4" alt="Tarjeta Gráfica RTX 4060">
+              <p class="text-muted small mb-2">Nvidia</p>
+
+              <!-- Rating -->
+              <div class="rating text-warning small mb-2">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <span class="text-muted ms-1">(210)</span>
+              </div>
+
+              <!-- Badge de stock -->
+              <span class="badge badge-out-of-stock w-100 mb-2 py-2">Agotado</span>
+
+              <!-- Precios -->
+              <p class="price-old text-secondary text-decoration-line-through mb-0 small">$3.500.000</p>
+              <p class="price-current fs-5 fw-bold mb-3">$2.999.000</p>
+
+              <!-- Button deshabilitado -->
+              <button class="btn btn-ts w-100 mt-auto disabled" type="button" aria-disabled="true">
+                <i class="bi bi-cart-plus"></i> Agotado
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== CARD 4: envío gratis + sin descuento ===== -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100 border-0">
+
+            <!-- Card Image -->
+            <div class="card-img-wrapper product-image-placeholder d-flex align-items-center justify-content-center bg-light text-muted small fw-semibold m-3">
+              CPU
+            </div>
+
+            <div class="card-body pt-0 d-flex flex-column">
+              <img src="img/procesadores/Procesador_Ryzen_5.jpg" width="250" height="220" style="object-fit: contain;" class="card-img-top p-4" alt="Procesador Ryzen 5">
+              <h6 class="card-title mb-1">Procesador AMD Ryzen 5 5600X</h6>
+              <p class="text-muted small mb-2">AMD</p>
+
+              <!-- Badge de envío -->
+              <span class="badge badge-shipping mb-2">
+                <i class="bi bi-truck"></i> Envío gratis
+              </span>
+
+              <!-- Rating -->
+              <div class="rating text-warning small mb-2">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+                <span class="text-muted ms-1">(37)</span>
+              </div>
+
+              <!-- Badge de stock -->
+              <span class="badge badge-stock w-100 mb-2 py-2">En stock</span>
+
+              <!-- Precios (sin descuento) -->
+              <p class="price-current fs-5 fw-bold mb-3">$836.000</p>
+
+              <!-- Button -->
+              <button class="btn btn-ts w-100 mt-auto" type="button">
+                <a href="carrito.html" class="bi bi-cart-plus">Agregar al carrito</a>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

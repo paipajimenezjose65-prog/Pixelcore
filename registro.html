@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="icons/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="container my-5" style="max-width:540px">
+    <div class="card shadow-sm">
+      <div class="card-body p-4">
+      <p class="d-inline-flex gap-1">
+  <a href="login.html" class="btn btn-primary" role="button" data-bs-toggle="button">VOLVER</a>
+  </p>
+        <h4 class="text-center mb-4">Crear cuenta</h4>
+
+        <form class="row g-3">
+          <div class="col-md-6">
+            <label class="form-label">Nombre</label>
+            <input type="text" class="form-control" required>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Apellido</label>
+            <input type="text" class="form-control" required>
+          </div>
+
+          <div class="col-12">
+            <label class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" required>
+          </div>
+
+          <div class="col-md-6">
+            <label class="form-label">Tipo de documento</label>
+            <select class="form-select" required>
+              <option value="">Elegir...</option>
+              <option>Cédula de ciudadanía</option>
+              <option>Tarjeta de identidad</option>
+              <option>Pasaporte</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Número de documento</label>
+            <input type="text" class="form-control" required>
+          </div>
+
+          <div class="col-md-6">
+            <label class="form-label">Contraseña</label>
+            <input type="password" class="form-control" minlength="8" required>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Confirmar contraseña</label>
+            <input type="password" class="form-control" minlength="8" required>
+          </div>
+
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="terminos" required>
+              <label class="form-check-label" for="terminos">Acepto los términos y condiciones</label>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary w-100">Crear cuenta</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

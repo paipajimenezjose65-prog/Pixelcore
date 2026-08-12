@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de compras</title>
+ <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="icons/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<!-- ===== HEADER: logo + buscador + cuenta/carrito (sticky) ===== -->
+  <div class="bg-white py-3 border-bottom sticky-top">
+    <div class="container d-flex align-items-center gap-3">
+      <a href="index.html" class="navbar-brand fw-bold fs-3 m-0">
+        <i class="bi bi-laptop text-ts"></i> PixelCore
+      </a>
+      <form class="d-flex flex-grow-1" role="search">
+        <div class="input-group">
+          <span class="input-group-text bg-white"><i class="bi bi-search text-ts"></i></span>
+          <input class="form-control" type="search" placeholder="¿Qué buscas hoy?">
+          <button class="btn btn-ts" type="submit">Buscar</button>
+        </div>
+      </form>
+      <a href="login.html" class="text-decoration-none text-center">
+        <i class="bi bi-person fs-4 d-block"></i>
+        <small>Mi cuenta</small>
+      </a>
+      <a href="carrito.html" class="text-decoration-none text-center position-relative">
+        <i class="bi bi-cart fs-4 d-block"></i>
+        <small>Mi carrito</small>
+        <span class="position-absolute top-0 start-100 translate-middle badge bg-ts">3</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- ===== NAV: mega-menú de categorías ===== -->
+  <nav class="navbar navbar-expand-lg bg-white border-bottom shadow-sm">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav align-items-lg-stretch">
+          <li class="nav-item dropdown position-static">
+            <a class="nav-link dropdown-toggle fw-semibold" href="#" role="button" data-bs-toggle="dropdown">
+              <i class="bi bi-grid me-1"></i>Categorías
+            </a>
+            <div class="dropdown-menu w-100 border-0 shadow rounded-0 py-4">
+              <div class="container">
+                <div class="row g-4">
+                  <div class="col-6 col-md-3">
+                    <div class="eyebrow mb-2">Cómputo</div>
+                    <a class="mega-link d-block mb-2" href="catalogo.html#portatiles">Portátiles</a>
+                    <a class="mega-link d-block mb-2" href="catalogo.html#escritorio">Computadores de escritorio</a>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="eyebrow mb-2">Componentes</div>
+                    <a class="mega-link d-block mb-2" href="catalogo.html#graficas">Tarjetas gráficas</a>
+                    <a class="mega-link d-block mb-2" href="catalogo.html#procesadores">Procesadores</a>
+                    <a class="mega-link d-block mb-2" href="catalogo.html#ram">Memorias RAM</a>
+                    <a class="mega-link d-block mb-2" href="catalogo.html#ssd">Discos SSD</a>
+                  </div>
+                    <div class="col-6 col-md">
+                  <div class="eyebrow mb-2">Nosotros</div>
+                    <p class="small text-muted mb-2">Descubre nuestra historia y valores.</p>
+                    <a href="nosotros.html" class="btn btn-ts btn-sm">Ver más</a>
+                 </div>
+                  <div class="col-6 col-md-3">
+                    <div class="eyebrow mb-2">Periféricos</div>
+                    <a class="mega-link d-block mb-2" href="catalogo.html#monitores">Monitores</a>
+                    <a class="mega-link d-block mb-2" href="catalogo.html#accesorios">Accesorios</a>
+                  </div>
+                  <div class="col-6 col-md-3 border-start">
+                    <div class="eyebrow mb-2">Destacado</div>
+                    <p class="small text-muted mb-2">Arma tu PC gamer con hasta 25% OFF esta semana.</p>
+                    <a href="catalogo.html" class="btn btn-ts btn-sm">Ver ofertas</a>                 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link fw-semibold" href="#ofertas">Tecnofertas</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold" href="#envio">Rastrea tu envío</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold" href="#comocomprar">¿Cómo comprar?</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold" href="contacto.html">Contáctanos</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+        <!-- Barra de herramientas: búsqueda + ordenamiento -->
+  <div class="d-flex flex-wrap justify-content-between align-items-center mb-4">
+    <h2 class="mb-0">Carrito de compras</h2>
+</div>
+
+ <div class="container my-5">
+  <h2 class="mb-4"><i class="bi bi-cart3"></i> Mi carrito</h2>
+ 
+  <div class="row g-4">
+ 
+    <!-- Tabla de productos -->
+    <div class="col-lg-8">
+      <table class="table align-middle">
+        <thead class="table-light">
+          <tr>
+            <th>Producto</th>
+            <th>Precio</th>
+            <th>Cantidad</th>
+            <th>Subtotal</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Portátil HP 16GB RAM</td>
+            <td>$2.000.000</td>
+            <td><input type="number" class="form-control" value="1" min="1" style="width:80px"></td>
+            <td>$2.000.000</td>
+            <td><button class="btn btn-sm btn-danger"><i class="bi bi-trash"></i></button></td>
+          </tr>
+          <tr>
+            <td>Monitor LG 24"</td>
+            <td>$700.000</td>
+            <td><input type="number" class="form-control" value="2" min="1" style="width:80px"></td>
+            <td>$1.400.000</td>
+            <td><button class="btn btn-sm btn-danger"><i class="bi bi-trash"></i></button></td>
+          </tr>
+        </tbody>
+      </table>
+ 
+      <a href="catalogo.html" class="btn btn-outline-primary">
+        <i class="bi bi-arrow-left"></i> Seguir comprando
+      </a>
+    </div>
+ 
+    <!-- Resumen -->
+    <div class="col-lg-4">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title mb-3">Resumen de compra</h5>
+          <div class="d-flex justify-content-between"><span>Subtotal</span><span>$3.400.000</span></div>
+          <div class="d-flex justify-content-between"><span>Envío</span><span>Gratis</span></div>
+          <hr>
+          <div class="d-flex justify-content-between fw-bold fs-5">
+            <span>Total</span><span class="text-primary">$3.400.000</span>
+          </div>
+          <button class="btn btn-success w-100 mt-3">
+            <i class="bi bi-bag-check"></i> Finalizar compra
+          </button>
+        </div>
+      </div>
+    </div>
+ 
+  </div>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+ 
+</body>
+</html>

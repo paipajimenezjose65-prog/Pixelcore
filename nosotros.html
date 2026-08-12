@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+          <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="icons/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <!-- ===== HEADER: logo + buscador + cuenta/carrito (sticky) ===== -->
+  <div class="bg-white py-3 border-bottom sticky-top">
+    <div class="container d-flex align-items-center gap-3">
+      <a href="index.html" class="navbar-brand fw-bold fs-3 m-0">
+        <i class="bi bi-laptop text-ts"></i> PixelCore
+      </a>
+      <form class="d-flex flex-grow-1" role="search">
+        <div class="input-group">
+          <span class="input-group-text bg-white"><i class="bi bi-search text-ts"></i></span>
+          <input class="form-control" type="search" placeholder="¿Qué buscas hoy?">
+          <button class="btn btn-ts" type="submit">Buscar</button>
+        </div>
+      </form>
+      <a href="login.html" class="text-decoration-none text-center">
+        <i class="bi bi-person fs-4 d-block"></i>
+        <small>Mi cuenta</small>
+      </a>
+      <a href="carrito.html" class="text-decoration-none text-center position-relative">
+        <i class="bi bi-cart fs-4 d-block"></i>
+        <small>Mi carrito</small>
+        <span class="position-absolute top-0 start-100 translate-middle badge bg-ts">3</span>
+      </a>
+    </div>
+  </div>
+
+ <!-- ===== NAV: mega-menú de categorías ===== -->
+  <nav class="navbar navbar-expand-lg bg-white border-bottom shadow-sm">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav align-items-lg-stretch">
+          <li class="nav-item dropdown position-static">
+            <a class="nav-link dropdown-toggle fw-semibold" href="#" role="button" data-bs-toggle="dropdown">
+              <i class="bi bi-grid me-1"></i>Categorías
+            </a>
+            <div class="dropdown-menu w-100 border-0 shadow rounded-0 py-4">
+              <div class="container">
+                <div class="row g-4">
+                  <div class="col-6 col-md-3">
+                    <div class="eyebrow mb-2">Cómputo</div>
+                    <a class="mega-link d-block mb-2" href="catalogo.html#portatiles">Portátiles</a>
+                    <a class="mega-link d-block mb-2" href="catalogo.html#escritorio">Computadores de escritorio</a>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="eyebrow mb-2">Componentes</div>
+                    <a class="mega-link d-block mb-2" href="catalogo.html#graficas">Tarjetas gráficas</a>
+                    <a class="mega-link d-block mb-2" href="catalogo.html#procesadores">Procesadores</a>
+                    <a class="mega-link d-block mb-2" href="catalogo.html#ram">Memorias RAM</a>
+                    <a class="mega-link d-block mb-2" href="catalogo.html#ssd">Discos SSD</a>
+                  </div>
+                    <div class="col-6 col-md">
+                  <div class="eyebrow mb-2">Nosotros</div>
+                    <p class="small text-muted mb-2">Descubre nuestra historia y valores.</p>
+                    <a href="nosotros.html" class="btn btn-ts btn-sm">Ver más</a>
+                 </div>
+                  <div class="col-6 col-md-3">
+                    <div class="eyebrow mb-2">Periféricos</div>
+                    <a class="mega-link d-block mb-2" href="catalogo.html#monitores">Monitores</a>
+                    <a class="mega-link d-block mb-2" href="catalogo.html#accesorios">Accesorios</a>
+                  </div>
+                  <div class="col-6 col-md-3 border-start">
+                    <div class="eyebrow mb-2">Destacado</div>
+                    <p class="small text-muted mb-2">Arma tu PC gamer con hasta 25% OFF esta semana.</p>
+                    <a href="catalogo.html" class="btn btn-ts btn-sm">Ver ofertas</a>                 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link fw-semibold" href="#ofertas">Tecnofertas</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold" href="#envio">Rastrea tu envío</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold" href="#comocomprar">¿Cómo comprar?</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold" href="contacto.html">Contáctanos</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+ 
+    <!-- Botón hamburguesa (celular) -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-2">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+   <section class="text-center py-5">
+  <div class="container">
+    <h2 class="mb-3">Quiénes somos</h2>
+    <p class="lead text-muted">
+      TechStore es una tienda de equipos de cómputo dedicada a ofrecer
+      tecnología de calidad con la mejor atención al cliente.
+    </p>
+  </div>
+</section>
+<div class="row g-4">
+  <div class="col-md-4">
+    <div class="card h-100 text-center shadow-sm">
+      <div class="card-body">
+        <i class="bi bi-book text-primary fs-1"></i>
+        <h5 class="mt-3">Historia</h5>
+        <p class="text-muted">Nacimos en 2020 con la idea de acercar la tecnología a todos.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card h-100 text-center shadow-sm">
+      <div class="card-body">
+        <i class="bi bi-bullseye text-primary fs-1"></i>
+        <h5 class="mt-3">Misión</h5>
+        <p class="text-muted">Ofrecer equipos de cómputo de calidad al mejor precio.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card h-100 text-center shadow-sm">
+      <div class="card-body">
+        <i class="bi bi-gem text-primary fs-1"></i>
+        <h5 class="mt-3">Valores</h5>
+        <p class="text-muted">Honestidad, calidad y compromiso con el cliente.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="text-center py-5">
+  <div class="container">
+    <h4 class="mb-4">Medios de pago</h4>
+    <p class="fs-1 text-primary">
+      <i class="bi bi-credit-card"></i>
+      <i class="bi bi-paypal"></i>
+      <i class="bi bi-cash-coin"></i>
+      <i class="bi bi-bank"></i>
+    </p>
+ 
+    <h4 class="mt-4 mb-3">Envíos</h4>
+    <p class="text-muted">
+      <i class="bi bi-truck text-primary"></i> Envío a todo el país en 2 a 5 días hábiles.
+    </p>
+  </div>
+</section>
+<ul class="list-unstyled">
+  <li><a href="#privacidad"><i class="bi bi-shield-check"></i> Política de privacidad</a></li>
+  <li><a href="#terminos"><i class="bi bi-file-text"></i> Términos y condiciones</a></li>
+  <li><a href="#devoluciones"><i class="bi bi-arrow-repeat"></i> Política de devoluciones</a></li>
+</ul>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

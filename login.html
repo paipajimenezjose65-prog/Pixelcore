@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="icons/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<!-- ===== HEADER: logo + buscador + cuenta/carrito (sticky) ===== -->
+  <div class="bg-white py-3 border-bottom sticky-top">
+    <div class="container d-flex align-items-center gap-3">
+      <a href="index.html" class="navbar-brand fw-bold fs-3 m-0">
+        <i class="bi bi-laptop text-ts"></i> PixelCore
+      </a>
+      <form class="d-flex flex-grow-1" role="search">
+        <div class="input-group">
+          <span class="input-group-text bg-white"><i class="bi bi-search text-ts"></i></span>
+          <input class="form-control" type="search" placeholder="¿Qué buscas hoy?">
+          <button class="btn btn-ts" type="submit">Buscar</button>
+        </div>
+      </form>
+      <a href="login.html" class="text-decoration-none text-center">
+        <i class="bi bi-person fs-4 d-block"></i>
+        <small>Mi cuenta</small>
+      </a>
+      <a href="carrito.html" class="text-decoration-none text-center position-relative">
+        <i class="bi bi-cart fs-4 d-block"></i>
+        <small>Mi carrito</small>
+        <span class="position-absolute top-0 start-100 translate-middle badge bg-ts">3</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- ===== NAV: mega-menú de categorías ===== -->
+  <nav class="navbar navbar-expand-lg bg-white border-bottom shadow-sm">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav align-items-lg-stretch">
+          <li class="nav-item dropdown position-static">
+            <a class="nav-link dropdown-toggle fw-semibold" href="#" role="button" data-bs-toggle="dropdown">
+              <i class="bi bi-grid me-1"></i>Categorías
+            </a>
+            <div class="dropdown-menu w-100 border-0 shadow rounded-0 py-4">
+              <div class="container">
+                <div class="row g-4">
+                  <div class="col-6 col-md-3">
+                    <div class="eyebrow mb-2">Cómputo</div>
+                    <a class="mega-link d-block mb-2" href="catalogo.html#portatiles">Portátiles</a>
+                    <a class="mega-link d-block mb-2" href="catalogo.html#escritorio">Computadores de escritorio</a>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="eyebrow mb-2">Componentes</div>
+                    <a class="mega-link d-block mb-2" href="catalogo.html#graficas">Tarjetas gráficas</a>
+                    <a class="mega-link d-block mb-2" href="catalogo.html#procesadores">Procesadores</a>
+                    <a class="mega-link d-block mb-2" href="catalogo.html#ram">Memorias RAM</a>
+                    <a class="mega-link d-block mb-2" href="catalogo.html#ssd">Discos SSD</a>
+                  </div>
+                    <div class="col-6 col-md">
+                  <div class="eyebrow mb-2">Nosotros</div>
+                    <p class="small text-muted mb-2">Descubre nuestra historia y valores.</p>
+                    <a href="nosotros.html" class="btn btn-ts btn-sm">Ver más</a>
+                 </div>
+                  <div class="col-6 col-md-3">
+                    <div class="eyebrow mb-2">Periféricos</div>
+                    <a class="mega-link d-block mb-2" href="catalogo.html#monitores">Monitores</a>
+                    <a class="mega-link d-block mb-2" href="catalogo.html#accesorios">Accesorios</a>
+                  </div>
+                  <div class="col-6 col-md-3 border-start">
+                    <div class="eyebrow mb-2">Destacado</div>
+                    <p class="small text-muted mb-2">Arma tu PC gamer con hasta 25% OFF esta semana.</p>
+                    <a href="catalogo.html" class="btn btn-ts btn-sm">Ver ofertas</a>                 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link fw-semibold" href="#ofertas">Tecnofertas</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold" href="#envio">Rastrea tu envío</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold" href="#comocomprar">¿Cómo comprar?</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold" href="contacto.html">Contáctanos</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container my-5" style="max-width:540px">
+  
+    <div class="card shadow-sm">
+      
+      <div class="card-body p-4">
+        <p class="d-inline-flex gap-1">
+  <a href="index.html" class="btn btn-outline" role="button" data-bs-toggle="button">VOLVER</a>
+  </p>
+        <h4 class="text-center mb-4">Iniciar sesión</h4>
+
+        <form>
+          <div class="mb-3">
+            <label class="form-label">Correo electrónico</label>
+            <div class="input-group">
+              <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+              <input type="email" class="form-control" placeholder="correo@ejemplo.com" required>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Contraseña</label>
+            <div class="input-group">
+              <span class="input-group-text"><i class="bi bi-lock"></i></span>
+              <input type="password" class="form-control" required>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-between mb-3">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="recordar">
+              <label class="form-check-label" for="recordar">Recordarme</label>
+            </div>
+            <a href="#" class="small">¿Olvidaste tu contraseña?</a>
+          </div>
+
+          <button type="submit" class="btn btn-primary w-100">Entrar</button>
+        </form>
+
+        <p class="text-center mt-3 mb-0">
+          ¿No tienes cuenta? <a href="registro.html">Regístrate</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
